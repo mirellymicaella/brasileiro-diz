@@ -1,7 +1,15 @@
 {
-  "routes": [{
-    "src": "/", 
-    "dest": "app.controller.js" 
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/main.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/main.js"
     }
   ]
 }
