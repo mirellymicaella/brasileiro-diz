@@ -1,0 +1,7 @@
+{
+  "routes": [{
+    "src": "/", 
+    "dest": "/dist/app.controller.ts" 
+    }
+  ]
+}
