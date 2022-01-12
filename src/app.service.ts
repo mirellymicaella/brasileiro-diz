@@ -21,6 +21,6 @@ export class AppService {
   getPhrase(): string {
     const phrases = this.getPhrases();
     const phrase = phrases[Math.floor(Math.random() * phrases.length)];
-    return phrase;
+    return {phrase:phrase};
   }
 }
